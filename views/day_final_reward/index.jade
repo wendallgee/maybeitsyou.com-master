@@ -1,0 +1,39 @@
+extends ../layout
+
+block content
+
+  div(class="container-featured container-featured-with-bg text-center")
+    div(class="container")
+
+      div(class="row")
+          div(class="row")
+            div(class="col-md-8 col-md-offset-2")
+              div(class="box")
+                h2(class="text-red text-center") We take your happiness seriously
+                br
+                p(class="text-black description") That's why when you pre-order Lauren Zander's honest, funny, and in-your-face book, Maybe It's You, you'll also get Inner.U, our digital coaching course, at half-price!
+                p(class="text-red description no-margin-bottom") We dare you to care about yourself as much as we do.
+                br
+                h4(class="text-black no-margin-bottom")
+                  a(href="http://www.hachettebookgroup.com/titles/lauren-handel-zander/maybe-its-you/9780316318662/", class="link-lg js-track", data-track="btn-preorder-receipt") Pre-order the book
+                h4(class="text-black")
+                  span &nbsp;then enter your receipt number below to receive your final reward.
+
+                form(action="//handelgroup.us11.list-manage.com/subscribe/post-json?u=c437be3e60be08169efbc857a&amp;id=e9c145520a" method="get" data-type="book" id="subscribe-form" class="")
+
+                  div(class="form-input-container")
+                    input(type="email" value="" placeholder="Email address" name="EMAIL" autofocus="true" class="required email form-control form-input" id="mce-EMAIL")
+                  div(class="form-input-container")
+                    input(type="text" value="" placeholder="First name" name="FNAME" class="form-control form-input" id="mce-FNAME")
+                  div(class="form-input-container")
+                    input(type="text" value="" placeholder="Receipt number" name="RECEIPT" class="form-control form-input" id="mce-RECEIPT")
+
+                  input(type="hidden" value="NONE" name="UTMSRC" id="mce-UTMSRC")
+                  input(type="hidden" value="NONE" name="UTMCAMP" id="mce-UTMCAMP")
+                  input(type="hidden" value="NONE" name="UTMMED" id="mce-UTMMED")
+
+                  div(style="position: absolute; left: -5000px;" aria-hidden="true")
+                    input(type="text" name="b_c437be3e60be08169efbc857a_26161ac9c0" tabindex="-1" value="")
+                  input(type="submit" value="SEND ME THE COUPON" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-black")
+
+                div(id="subscribe-result" class="description-sub box-compact")
